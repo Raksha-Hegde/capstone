@@ -1,0 +1,40 @@
+<div class="main">
+  <h1>
+    <p style="text-align:center; font-size: 20px">
+      <b>Messages!</b>
+    </p>
+  </h1>
+  <div>
+    <div>
+      <div *ngIf="type == 'circle'" style="float: right">
+        <div class="input-group">
+          <div class="input-group-addon">
+            <i class="fa fa-user"></i>
+          </div>
+          <input type="text" [(ngModel)]='newUser' placeholder="add user" class="form-control">
+          <button class="btn" (click)="addUserToCircle(newUser)">Add</button>
+        </div>
+
+      </div>
+      <ul>
+        <li *ngFor="let msg of messages">
+          <div class="msg" *ngIf="type == 'user'">
+            {{msg.senderName}} to {{msg.receiverId}}
+          </div>
+          <div class="msg" *ngIf="type == 'circle'">
+            from {{msg.senderName}}
+          </div>
+          {{msg.message}}
+        </li>
+        <br>
+        <div class="input-group">
+          <div class="input-group-addon">
+            <i class="fa fa-comments-o"></i>
+          </div>
+          <input type="text" [(ngModel)]='msg' placeholder="@message" class="form-control">
+        </div>
+        <button class="btn btn-blue" (click)="onClick(msg,type)">Send</button>
+      </ul>
+    </div>
+  </div>
+</div>

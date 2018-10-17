@@ -1,0 +1,22 @@
+.main {
+	padding-left: 2px;
+}
+
+.user ul {
+	margin: 0px;
+	color: floralwhite;
+	text-rendering: auto;
+}
+.user li:hover {
+	margin-bottom: 5px;
+	background-color: #8ae234;
+}
+.input-group-user {
+	border: 1px solid blanchedalmond;
+	background: aliceblue;
+	padding: 6px;
+	padding-top: 3px;
+	border-radius: 0;
+	color: gray;
+	font-size: 18px;
+  }

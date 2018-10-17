@@ -1,0 +1,48 @@
+.heading {
+  font-size: bold;
+  text-align: center;
+  background-color: gray;
+  height: 50px;
+  padding-right: 10px;
+}
+
+.box {
+  height: 620px;
+  border: 2px solid black;
+  margin-right: 0;
+}
+
+.left {
+  margin-right: 0px;
+  background-color: purple;
+}
+
+.msgBox {
+  height: 600px;
+  border: 2px solid black;
+  margin-right: 0;
+  background-image: linear-gradient(white, grey);
+}
+
+.right {
+  margin-left: 0px;
+}
+
+.btn-logout {
+  float: right;
+  text-align: center;
+  border-style: solid;
+  border-radius: 5px;
+  background-color: rgb(0, 132, 255);
+  color: aliceblue;
+  width: 25%;
+}
+
+.sidebar {
+  height: 600px;
+  border: 2px solid black;
+  margin-right: 0;
+  color: white;
+  background-color: black;
+}
+

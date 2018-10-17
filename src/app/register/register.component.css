@@ -1,0 +1,36 @@
+.register-box {
+  overflow: hidden;
+  position: absolute;
+  width: 460px;
+  top: 30%;
+  left: 35%;
+}
+
+.container {
+  background-image: url(../../assets/bg.jpg);
+  padding-block-start: 0%;
+  padding-block-end: 40%;
+}
+.input-group {
+
+  padding: 2px;
+}
+.form-control {
+  font-size: 16px;
+  height: 40px;
+  border-radius: 1;
+  border: 1px solid #787c83;
+}
+.btn-green {
+background-color:rgb(39, 160, 3);
+color: aliceblue;
+width: 100%;
+}
+.btn {
+ padding-left: 0%;
+}
+.btn-blue {
+background-color: rgb(0, 132, 255);
+color: aliceblue;
+width: 100%;
+}

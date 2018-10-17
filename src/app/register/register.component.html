@@ -1,0 +1,20 @@
+<div class="container">
+<div class="register-box">
+        <h1 style="text-align: center">Registeration</h1>
+        <form #signupform='ngForm' (ngSubmit)='registersUser(signupform)' autocomplete="off" method="POST" action="register">
+            <div class="input-group">
+              <input type="text" name="name" placeholder="Enter your name" class="form-control" class="form-control" ngModel>
+            </div>
+            <div class="input-group">
+              <input type="text" name="username" placeholder="Enter username" method="POST" class="form-control" ngModel>
+            </div>
+            <div class="input-group">
+              <input type="password" name="password" placeholder="Enter password" required method="POST" class="form-control" ngModel>
+            </div>
+            <div class="btn">
+              <button class="btn btn-green" type="submit">Register</button> 
+              <button class="btn btn-blue" (click)= "login()">Login</button>             
+            </div>            
+          </form>  
+    </div>
+</div>
